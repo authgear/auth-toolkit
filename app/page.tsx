@@ -5,6 +5,7 @@ import { ICON_MAP, Tool, EducationalLink } from "@/types"
 import HeroSection from "@/components/sections/HeroSection"
 import EducationalSection from "@/components/sections/EducationalSection"
 import Footer from "@/components/sections/Footer"
+import GitHubStarBadge from "@/components/GitHubStarBadge"
 
 // This is a Server Component - no client-side state or effects
 export default function HomePage() {
@@ -29,6 +30,7 @@ export default function HomePage() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900">
+      <GitHubStarBadge />
       <HeroSection tools={tools} />
       <EducationalSection educationalLinks={educationalLinks} />
       <Footer footerLinks={footerLinks} />
