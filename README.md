@@ -47,6 +47,28 @@ auth-toolkit/
 └── public/             # Static assets
 ```
 
+## Google Tag Manager Setup
+
+To enable Google Tag Manager tracking:
+
+1. **Create environment file**
+   ```bash
+   cp env.example .env.local
+   ```
+
+2. **Set your GTM ID**
+   Edit `.env.local` and replace `GTM-XXXXXXX` with your actual GTM ID:
+   ```bash
+   NEXT_PUBLIC_GTM_ID=GTM-ABC123XY
+   ```
+
+3. **Deploy with environment variable**
+   - For local development: GTM will work automatically
+   - For production: Set the environment variable in your deployment platform
+   - For GitHub Pages: Add the environment variable to GitHub Actions secrets
+
+**Note**: The `.env.local` file is gitignored and won't be committed to the repository.
+
 ## Deployment
 
 ### GitHub Pages

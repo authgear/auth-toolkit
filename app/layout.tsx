@@ -3,6 +3,8 @@ import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import { Suspense } from "react"
 import "./globals.css"
+import GoogleTagManager from "@/components/GoogleTagManager"
+import GoogleTagManagerNoScript from "@/components/GoogleTagManagerNoScript"
 
 const inter = Inter({
   subsets: ["latin"],
@@ -50,12 +52,15 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode
 }>) {
+  const gtmId = process.env.NEXT_PUBLIC_GTM_ID
+
   return (
     <html lang="en" suppressHydrationWarning={true}>
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="google-site-verification" content="ds2pJuSFhsV5IA72L8SJHccY7tIanGhBjHVjrCVOZyQ" />
         <link rel="sitemap" type="application/xml" title="Sitemap" href="/auth-toolkit/sitemap.xml" />
+        {gtmId && <GoogleTagManager gtmId={gtmId} />}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -190,6 +195,7 @@ export default function RootLayout({
         />
       </head>
       <body className={`font-sans ${inter.variable}`} suppressHydrationWarning={true}>
+        {gtmId && <GoogleTagManagerNoScript gtmId={gtmId} />}
         <Suspense fallback={null}>{children}</Suspense>
       </body>
     </html>
