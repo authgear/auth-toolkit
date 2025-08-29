@@ -1,0 +1,18 @@
+[
+  {
+    "title": "JWE vs JWT",
+    "url": "https://www.authgear.com/post/jwe-vs-jwt"
+  },
+  {
+    "title": "What is JWKS?",
+    "url": "https://www.authgear.com/post/what-is-jwks"
+  },
+  {
+    "title": "What is TOTP (RFC 6238 explained)",
+    "url": "https://www.authgear.com/post/what-is-totp"
+  },
+  {
+    "title": "5 Common TOTP Mistakes Developers Make",
+    "url": "https://www.authgear.com/post/5-common-totp-mistakes"
+  }
+]

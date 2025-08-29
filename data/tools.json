@@ -1,0 +1,32 @@
+[
+  {
+    "title": "JWT & JWE Debugger",
+    "description": "Decode & verify JWTs; encrypt/decrypt JWEs.",
+    "url": "https://www.authgear.com/tools/jwt-jwe-debugger",
+    "icon": "Shield"
+  },
+  {
+    "title": "JWK Generator",
+    "description": "Convert PEM <> JWK, export JWKS.",
+    "url": "https://www.authgear.com/tools/jwk-generator",
+    "icon": "Key"
+  },
+  {
+    "title": "HMAC Tool",
+    "description": "Generate & verify HMAC (HS256/384/512) for webhooks.",
+    "url": "https://www.authgear.com/tools/hmac-signature-generator-verifier",
+    "icon": "Hash"
+  },
+  {
+    "title": "SAML Testing Tool",
+    "description": "Spin up a mock SP to test SAML assertions.",
+    "url": "https://samlsp.com/",
+    "icon": "FileText"
+  },
+  {
+    "title": "TOTP Authenticator",
+    "description": "Quickly test OTP codes (RFC 6238).",
+    "url": "https://www.authgear.com/tools/totp-authenticator",
+    "icon": "Smartphone"
+  }
+]
