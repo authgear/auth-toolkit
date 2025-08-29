@@ -54,6 +54,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning={true}>
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="google-site-verification" content="ds2pJuSFhsV5IA72L8SJHccY7tIanGhBjHVjrCVOZyQ" />
         <link rel="sitemap" type="application/xml" title="Sitemap" href="/auth-toolkit/sitemap.xml" />
         <script
           type="application/ld+json"
