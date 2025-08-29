@@ -5,6 +5,7 @@ import { Suspense } from "react"
 import "./globals.css"
 import GoogleTagManager from "@/components/GoogleTagManager"
 import GoogleTagManagerNoScript from "@/components/GoogleTagManagerNoScript"
+import DebugGTM from "@/components/DebugGTM"
 
 const inter = Inter({
   subsets: ["latin"],
@@ -196,6 +197,7 @@ export default function RootLayout({
       </head>
       <body className={`font-sans ${inter.variable}`} suppressHydrationWarning={true}>
         {gtmId && <GoogleTagManagerNoScript gtmId={gtmId} />}
+        <DebugGTM />
         <Suspense fallback={null}>{children}</Suspense>
       </body>
     </html>

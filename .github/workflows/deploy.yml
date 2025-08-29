@@ -28,6 +28,7 @@ jobs:
       uses: actions/setup-node@v4
       with:
         node-version: '18'
+        cache: 'pnpm'
         
     - name: Setup pnpm
       uses: pnpm/action-setup@v2
@@ -35,9 +36,13 @@ jobs:
         version: 10
         
     - name: Install dependencies
+      env:
+        NEXT_PUBLIC_GTM_ID: ${{ secrets.NEXT_PUBLIC_GTM_ID }}
       run: pnpm install --frozen-lockfile
       
     - name: Build project
+      env:
+        NEXT_PUBLIC_GTM_ID: ${{ secrets.NEXT_PUBLIC_GTM_ID }}
       run: pnpm build
       
     - name: Setup Pages
