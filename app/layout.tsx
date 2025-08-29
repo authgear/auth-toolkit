@@ -13,6 +13,26 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Auth Developer Mini-Toolkit - Authgear Tools",
   description: "In-browser JWT/JWE, JWK/JWKS, HMAC, SAML, and TOTP tools for developers. Free and open-source.",
+  openGraph: {
+    title: "Auth Developer Mini-Toolkit - Authgear Tools",
+    description: "In-browser JWT/JWE, JWK/JWKS, HMAC, SAML, and TOTP tools for developers. Free and open-source.",
+    images: [
+      {
+        url: '/og_image.png',
+        width: 1200,
+        height: 630,
+        alt: 'Auth Developer Mini-Toolkit - Free and open-source authentication tools for developers',
+      },
+    ],
+    type: 'website',
+    siteName: 'Auth Developer Mini-Toolkit',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "Auth Developer Mini-Toolkit - Authgear Tools",
+    description: "In-browser JWT/JWE, JWK/JWKS, HMAC, SAML, and TOTP tools for developers. Free and open-source.",
+    images: ['/og_image.png'],
+  },
   icons: {
     icon: [
       {
