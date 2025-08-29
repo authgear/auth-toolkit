@@ -11,6 +11,7 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://auth-toolkit.vercel.app'),
   title: "Auth Developer Mini-Toolkit - Authgear Tools",
   description: "In-browser JWT/JWE, JWK/JWKS, HMAC, SAML, and TOTP tools for developers. Free and open-source.",
   openGraph: {
