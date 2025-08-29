@@ -198,10 +198,22 @@ export default function HomePage() {
         <div className="mx-auto max-w-7xl px-6 py-16 lg:px-8">
           <div className="text-center">
             <div className="flex items-center justify-center space-x-2 mb-6">
-              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-blue-500/10">
-                <Shield className="h-6 w-6 text-blue-400" />
-              </div>
-              <span className="text-xl font-semibold text-white">Authgear Tools</span>
+              <a 
+                href="https://www.authgear.com" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center space-x-2 hover:opacity-80 transition-opacity duration-200"
+              >
+                <span className="text-slate-400">Powered by</span>
+                <div className="h-6 w-24">
+                  {/* SVG logotype will be placed here */}
+                  <img 
+                    src="/authgear-logo.svg" 
+                    alt="Authgear" 
+                    className="h-full w-full object-contain filter brightness-0 invert"
+                  />
+                </div>
+              </a>
             </div>
 
             <p className="text-slate-400 mb-8 max-w-md mx-auto">
@@ -211,7 +223,6 @@ export default function HomePage() {
             <div className="flex justify-center space-x-8">
               {[
                 { name: "GitHub", href: "https://github.com/authgear" },
-                { name: "Documentation", href: "https://www.authgear.com" },
                 { name: "Support", href: "https://www.authgear.com/contact" },
               ].map((item) => (
                 <a
