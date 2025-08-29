@@ -1,7 +1,6 @@
 import type React from "react"
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
-import { Analytics } from "@vercel/analytics/next"
 import { Suspense } from "react"
 import "./globals.css"
 
@@ -12,9 +11,8 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: "Developer Auth Mini-Toolkit - Authgear Tools",
+  title: "Auth Developer Mini-Toolkit - Authgear Tools",
   description: "In-browser JWT/JWE, JWK/JWKS, HMAC, SAML, and TOTP tools for developers. Free and open-source.",
-  generator: "v0.app",
 }
 
 export default function RootLayout({
@@ -24,9 +22,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`font-sans ${inter.variable}`}>
+      <body className={`font-sans ${inter.variable}`} suppressHydrationWarning={true}>
         <Suspense fallback={null}>{children}</Suspense>
-        <Analytics />
       </body>
     </html>
   )

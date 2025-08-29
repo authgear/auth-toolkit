@@ -1,30 +1,79 @@
-# Auth toolkit landing page
+# Auth Toolkit Landing Page
 
-*Automatically synced with your [v0.app](https://v0.app) deployments*
+Auth Developer Mini-Toolkit
+In-browser JWT/JWE, JWK/JWKS, HMAC, SAML, and TOTP tools for developers. Perfect for authentication development and testing.
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/fungc-ios-projects/v0-auth-toolkit-landing-page)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.app-black?style=for-the-badge)](https://v0.app/chat/projects/zro9jreWwM5)
+## Local Development
 
-## Overview
+### Prerequisites
 
-This repository will stay in sync with your deployed chats on [v0.app](https://v0.app).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.app](https://v0.app).
+- Node.js 18+ 
+- pnpm (recommended) or npm
+
+### Setup
+
+1. **Install dependencies**
+   ```bash
+   pnpm install
+   ```
+
+2. **Start development server**
+   ```bash
+   pnpm dev
+   ```
+
+3. **Open your browser**
+   Navigate to [http://localhost:3000](http://localhost:3000)
+
+### Build Commands
+
+- **Development**: `pnpm dev`
+- **Build**: `pnpm build`
+- **Start Production**: `pnpm start`
+- **Lint**: `pnpm lint`
+
+## Project Structure
+
+```
+auth-toolkit/
+├── app/                 # Next.js app directory
+│   ├── globals.css     # Global styles
+│   ├── layout.tsx      # Root layout
+│   └── page.tsx        # Home page
+├── components/          # Reusable UI components
+│   └── ui/             # Base UI components
+├── data/               # Static data files
+├── lib/                # Utility functions
+└── public/             # Static assets
+```
 
 ## Deployment
 
-Your project is live at:
+### GitHub Pages
 
-**[https://vercel.com/fungc-ios-projects/v0-auth-toolkit-landing-page](https://vercel.com/fungc-ios-projects/v0-auth-toolkit-landing-page)**
+This project is configured for static export and GitHub Pages deployment:
 
-## Build your app
+1. **Build the project**
+   ```bash
+   pnpm build
+   ```
 
-Continue building your app on:
+2. **Deploy to GitHub Pages**
+   - Push to your repository
+   - Enable GitHub Pages in repository settings
+   - Set source to "GitHub Actions" or "Deploy from a branch"
+   - The `out/` directory contains the static files
 
-**[https://v0.app/chat/projects/zro9jreWwM5](https://v0.app/chat/projects/zro9jreWwM5)**
 
-## How It Works
+## Adding New Tools
 
-1. Create and modify your project using [v0.app](https://v0.app)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+Edit `data/tools.json` to add new authentication tools:
+
+```json
+{
+  "title": "Tool Name",
+  "description": "Tool description",
+  "url": "https://tool-url.com",
+  "icon": "IconName"
+}
+```
