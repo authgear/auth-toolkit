@@ -18,7 +18,7 @@ export default function Footer({ footerLinks }: FooterProps) {
               <div className="h-6 w-24">
                 {/* SVG logotype will be placed here */}
                 <img 
-                  src="/authgear-logo.svg" 
+                  src="/auth-toolkit/authgear-logo.svg" 
                   alt="Authgear" 
                   className="h-full w-full object-contain filter brightness-0 invert"
                 />
