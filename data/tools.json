@@ -7,19 +7,19 @@
   },
   {
     "title": "JWK Generator",
-    "description": "Convert PEM <> JWK, export JWKS.",
+    "description": "Convert PEM <> JWK, JWK <> PEM, export JWKS for jwks_uri",
     "url": "https://www.authgear.com/tools/jwk-generator",
     "icon": "Key"
   },
   {
     "title": "HMAC Tool",
-    "description": "Generate & verify HMAC (HS256/384/512) for webhooks.",
+    "description": "Generate & verify HMAC SHA-256/384/512 for webhooks.",
     "url": "https://www.authgear.com/tools/hmac-signature-generator-verifier",
     "icon": "Hash"
   },
   {
     "title": "SAML Testing Tool",
-    "description": "Spin up a mock SP to test SAML assertions.",
+    "description": "Spin up a mock SAML SP to test SAML assertions.",
     "url": "https://samlsp.com/",
     "icon": "FileText"
   },

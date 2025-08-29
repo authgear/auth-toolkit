@@ -80,15 +80,15 @@ export default function HeroSection({ tools }: HeroSectionProps) {
                       asChild
                       className="w-full bg-blue-600 hover:bg-blue-500 text-white shadow-lg hover:shadow-xl transition-all duration-200 group/button"
                     >
-                      <a
-                        href={tool.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center justify-center"
-                      >
-                        Open Tool
-                        <ExternalLink className="ml-2 h-4 w-4 group-hover/button:translate-x-0.5 transition-transform" />
-                      </a>
+                                              <a
+                          href={tool.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="flex items-center justify-center"
+                        >
+                          Open {tool.title}
+                          <ExternalLink className="ml-2 h-4 w-4 group-hover/button:translate-x-0.5 transition-transform" />
+                        </a>
                     </Button>
                   </CardContent>
                 </Card>
